@@ -1,0 +1,126 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-right: .5rem;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-top: 1px solid #444;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #555;
+}
+
+nav.open {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.about, .photo, .courses {
+  background: #eee;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.photo img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background: #555;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: .5rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+.course-card.completed {
+  background-color: #d1f5d3;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 .3rem;
+}
