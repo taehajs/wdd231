@@ -127,3 +127,8 @@ footer {
     display: block;
   }
 }
+
+a.active {
+  background-color: #00695c;
+  color: white;
+}
