@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Seoul Smart Tech",
+    "address": "23 Teheran-ro, Gangnam-gu, Seoul, South Korea",
+    "phone": "+82-2-555-1100",
+    "website": "https://seoulsmarttech.kr",
+    "image": "seoulsmarttech.png",
+    "membership": "Gold"
+  },
+  {
+    "name": "Busan Startup Hub",
+    "address": "88 Centum Jungang-ro, Haeundae-gu, Busan, South Korea",
+    "phone": "+82-51-700-8833",
+    "website": "https://busanhub.kr",
+    "image": "busanhub.png",
+    "membership": "Silver"
+  },
+  {
+    "name": "Jeju Organic Market",
+    "address": "45 Jungang-ro, Jeju-si, Jeju-do, South Korea",
+    "phone": "+82-64-332-7788",
+    "website": "https://jejuorganic.kr",
+    "image": "jejuorganic.png",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Incheon Travel Agency",
+    "address": "12 Yeonsu-ro, Yeonsu-gu, Incheon, South Korea",
+    "phone": "+82-32-555-9990",
+    "website": "https://incheontravel.co.kr",
+    "image": "incheontravel.png",
+    "membership": "Silver"
+  },
+  {
+    "name": "Global Insights USA",
+    "address": "540 5th Ave, New York, NY, USA",
+    "phone": "+1-212-332-7788",
+    "website": "https://globalinsights.com",
+    "image": "globalinsights.png",
+    "membership": "Gold"
+  },
+  {
+    "name": "Pacific Trade Solutions",
+    "address": "500 Market St, San Francisco, CA, USA",
+    "phone": "+1-415-981-0032",
+    "website": "https://pacifictradeusa.com",
+    "image": "pacifictrade.png",
+    "membership": "Gold"
+  },
+  {
+    "name": "Austin Innovation Partners",
+    "address": "310 Congress Ave, Austin, TX, USA",
+    "phone": "+1-512-441-9900",
+    "website": "https://austininnovators.com",
+    "image": "austininnovation.png",
+    "membership": "Bronze"
+  }
+]
