@@ -130,7 +130,6 @@ footer {
 
 a.active {
   background-color: #00695c;
-  color: white;
 }
 
 
@@ -208,6 +207,10 @@ nav li a:hover, nav li a.active {
   transform: translate(-50%, -50%);
   color: white;
   text-shadow: 1px 1px 4px #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+
 }
 
 .cta-btn {
