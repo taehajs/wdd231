@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Valley Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Green Valley Chamber</h1>
+    <button id="menu-btn">☰</button>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="images/hero.jpg" alt="City view" />
+      <div class="hero-text">
+        <h2>Welcome to Green Valley Chamber of Commerce</h2>
+        <a href="#" class="cta-btn">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <div class="event">
+        <h3>Annual Business Networking Night</h3>
+        <p>📅 November 20, 2025 • Green Valley Convention Hall</p>
+      </div>
+      <div class="event">
+        <h3>Local Business Fair</h3>
+        <p>📅 December 5–6, 2025 • Downtown Square</p>
+      </div>
+    </section>
+
+    <section id="weather">
+      <h2>Current Weather</h2>
+      <div class="weather-info">
+        <p id="current-temp">Temperature: ...</p>
+        <p id="weather-desc">Condition: ...</p>
+      </div>
+      <div id="forecast">
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast-list"></ul>
+      </div>
+    </section>
+
+    <section id="spotlight">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container" class="spotlight-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Green Valley Chamber | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
