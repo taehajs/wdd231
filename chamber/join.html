@@ -8,7 +8,6 @@
   <meta name="description" content="Join the Midtown Chamber of Commerce to access business resources, networking, events, and community support. Complete the membership application today.">
   <meta name="author" content="taehajs">
 
- 
   <link rel="icon" href="images/favicon.ico">
 
   <meta property="og:title" content="Join the Midtown Chamber of Commerce – Membership Application">
@@ -47,37 +46,37 @@
 
         <label>
           First Name
-          <input type="text" name="firstName" required autocomplete="given-name">
+          <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name">
         </label>
 
         <label>
           Last Name
-          <input type="text" name="lastName" required autocomplete="family-name">
+          <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name">
         </label>
 
         <label>
           Organizational Title
-          <input type="text" name="orgTitle" pattern="[A-Za-zÀ-ž\- ]{7,}" title="Only letters, hyphens, and spaces, minimum 7 characters" autocomplete="organization-title">
+          <input type="text" name="orgTitle" pattern="[A-Za-zÀ-ž\- ]{7,}" title="Enter your organizational title (letters, hyphens, spaces, min 7 chars)" autocomplete="organization-title">
         </label>
 
         <label>
           Email
-          <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
+          <input type="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Enter your email address">
         </label>
 
         <label>
           Mobile Phone
-          <input type="tel" name="phone" required autocomplete="tel">
+          <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
         </label>
 
         <label>
           Organization Name
-          <input type="text" name="organization" required autocomplete="organization">
+          <input type="text" name="organization" required autocomplete="organization" title="Enter your organization name">
         </label>
 
         <label>
           Membership Level
-          <select name="membership" required>
+          <select name="membership" required title="Select a membership level">
             <option value="">Select a level…</option>
             <option value="np">NP Membership</option>
             <option value="bronze">Bronze Membership</option>
@@ -88,7 +87,7 @@
 
         <label>
           Organization Description
-          <textarea name="description"></textarea>
+          <textarea name="description" title="Enter a description of your organization"></textarea>
         </label>
 
         <input type="hidden" id="timestamp" name="timestamp">
