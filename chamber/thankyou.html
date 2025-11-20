@@ -1,58 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Thank You – Midtown Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-  <header>
-    <h1>Chamber of Commerce</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="thankyou-container">
-    <h2>Thank You for Joining!</h2>
-    <p>Your membership application has been received. Below is the information you submitted:</p>
-
-    <section class="submitted-info" id="submittedInfo"></section>
+  <main style="padding: 2rem; text-align: center;">
+    <h1>Thank You!</h1>
+    <p>Your membership application has been submitted successfully.</p>
+    <a href="index.html">Return Home</a>
   </main>
-
-  <footer>
-    <p>© 2025 Chamber of Commerce</p>
-  </footer>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-
-    const fields = [
-      { label: "First Name", key: "firstName" },
-      { label: "Last Name", key: "lastName" },
-      { label: "Email", key: "email" },
-      { label: "Mobile Phone", key: "phone" },
-      { label: "Organization", key: "organization" },
-      { label: "Timestamp", key: "timestamp" },
-    ];
-
-    const container = document.getElementById("submittedInfo");
-
-    fields.forEach(field => {
-      const value = params.get(field.key);
-      if (value) {
-        const div = document.createElement("div");
-        div.classList.add("info-row");
-        div.innerHTML = `<strong>${field.label}:</strong> ${value}`;
-        container.appendChild(div);
-      }
-    });
-  </script>
 </body>
 </html>
