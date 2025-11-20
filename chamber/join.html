@@ -3,31 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Join – Midtown Chamber of Commerce</title>
-  <meta name="description" content="Join the Midtown Chamber of Commerce to access business resources, networking, events, and community support. Complete the membership application today.">
-  <meta name="author" content="taehajs">
-
+  <title>Join the Chamber – Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership to the Chamber of Commerce and enjoy exclusive benefits for your organization.">
+  <meta name="author" content="Your Name">
   <link rel="icon" href="images/favicon.ico">
 
-  <meta property="og:title" content="Join the Midtown Chamber of Commerce – Membership Application">
-  <meta property="og:description" content="Become a member of the Midtown Chamber of Commerce. Apply for NP, Bronze, Silver, or Gold membership and grow your business with our community.">
-  <meta property="og:image" content="https://taehajs.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:title" content="Join the Chamber – Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership to the Chamber of Commerce and enjoy exclusive benefits for your organization.">
+  <meta property="og:image" content="https://taehajs.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://taehajs.github.io/wdd231/chamber/join.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/join.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 
   <script defer src="scripts/join.js"></script>
 </head>
-
 <body>
   <header>
-    <h1>Join the Chamber</h1>
+    <h1>Chamber of Commerce</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -40,55 +35,38 @@
 
   <main class="join-container">
     <section class="form-section">
-      <h2>Membership Application</h2>
-
+      <h1>Join the Chamber</h1>
       <form method="get" action="thankyou.html" id="joinForm">
 
-        <label>
-          First Name
-          <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name">
-        </label>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
 
-        <label>
-          Last Name
-          <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name">
-        </label>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
 
-        <label>
-          Organizational Title
-          <input type="text" name="orgTitle" pattern="[A-Za-zÀ-ž\- ]{7,}" title="Enter your organizational title (letters, hyphens, spaces, min 7 chars)" autocomplete="organization-title">
-        </label>
+        <label for="orgTitle">Organizational Title</label>
+        <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-zÀ-ž\- ]{7,}" title="Enter your organizational title (letters, hyphens, spaces, min 7 chars)">
 
-        <label>
-          Email
-          <input type="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Enter your email address">
-        </label>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Enter your email address">
 
-        <label>
-          Mobile Phone
-          <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
-        </label>
+        <label for="phone">Mobile Phone</label>
+        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
 
-        <label>
-          Organization Name
-          <input type="text" name="organization" required autocomplete="organization" title="Enter your organization name">
-        </label>
+        <label for="organization">Organization Name</label>
+        <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your organization name">
 
-        <label>
-          Membership Level
-          <select name="membership" required title="Select a membership level">
-            <option value="">Select a level…</option>
-            <option value="np">NP Membership</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select>
-        </label>
+        <label for="membership">Membership Level</label>
+        <select id="membership" name="membership" required title="Select a membership level">
+          <option value="">Select a level…</option>
+          <option value="np">NP Membership (Non-Profit)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
 
-        <label>
-          Organization Description
-          <textarea name="description" title="Enter a description of your organization"></textarea>
-        </label>
+        <label for="description">Organization Description</label>
+        <textarea id="description" name="description" title="Enter a description of your organization"></textarea>
 
         <input type="hidden" id="timestamp" name="timestamp">
 
@@ -99,57 +77,57 @@
     <section class="membership-cards">
       <div class="card" data-modal="npModal">
         <h3>NP Membership</h3>
-        <p>For non-profit organizations.</p>
+        <p>For non-profit organizations — free level.</p>
         <button class="info-btn">More Info</button>
       </div>
 
       <div class="card" data-modal="bronzeModal">
         <h3>Bronze Membership</h3>
-        <p>Entry-level membership for small businesses.</p>
+        <p>Affordable membership for small businesses.</p>
         <button class="info-btn">More Info</button>
       </div>
 
       <div class="card" data-modal="silverModal">
         <h3>Silver Membership</h3>
-        <p>Extra visibility and resources.</p>
+        <p>Extra benefits and promotion.</p>
         <button class="info-btn">More Info</button>
       </div>
 
       <div class="card" data-modal="goldModal">
         <h3>Gold Membership</h3>
-        <p>Premium benefits and maximum exposure.</p>
+        <p>Maximum exposure, VIP access, and special events.</p>
         <button class="info-btn">More Info</button>
       </div>
     </section>
 
-    <dialog id="npModal">
+    <dialog id="npModal" class="modal">
       <h3>NP Membership Benefits</h3>
-      <p>Free membership • Community events • Non-profit networking</p>
+      <p>• Free membership<br>• Community events<br>• Non-profit networking</p>
       <button class="close-modal">Close</button>
     </dialog>
 
-    <dialog id="bronzeModal">
+    <dialog id="bronzeModal" class="modal">
       <h3>Bronze Membership Benefits</h3>
-      <p>Event discounts • Business listing • Newsletter promotion</p>
+      <p>• Event discounts<br>• Business listing<br>• Newsletter promotion</p>
       <button class="close-modal">Close</button>
     </dialog>
 
-    <dialog id="silverModal">
+    <dialog id="silverModal" class="modal">
       <h3>Silver Membership Benefits</h3>
-      <p>Spotlight advertising • Training sessions • Priority seating</p>
+      <p>• Spotlight advertising<br>• Training sessions<br>• Priority event seating</p>
       <button class="close-modal">Close</button>
     </dialog>
 
-    <dialog id="goldModal">
+    <dialog id="goldModal" class="modal">
       <h3>Gold Membership Benefits</h3>
-      <p>VIP events • Maximum promotion • Homepage placement</p>
+      <p>• Maximum promotion<br>• VIP events<br>• Premium placement on homepage</p>
       <button class="close-modal">Close</button>
     </dialog>
 
   </main>
 
   <footer>
-    <p>© 2025 Midtown Chamber of Commerce</p>
+    <p>© 2025 Chamber of Commerce</p>
   </footer>
 </body>
 </html>
