@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamber of Commerce – Join</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="join.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="join-container">
+    <section class="form-section">
+      <h2>Membership Application</h2>
+
+      <form method="get" action="thankyou.html" id="joinForm">
+
+        <label>
+          First Name
+          <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
+        </label>
+
+        <label>
+          Last Name
+          <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+        </label>
+
+        <label>
+          Organizational Title
+          <input type="text" name="orgTitle" title="Your title within the organization" autocomplete="organization-title" pattern="[A-Za-zÀ-ž\- ]{7,}">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required title="Enter your email address" autocomplete="email" placeholder="example@domain.com">
+        </label>
+
+
+        <label>
+          Mobile Phone
+          <input type="tel" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
+        </label>
+
+        <label>
+          Organization Name
+          <input type="text" name="organization" required title="Enter your business or organization name" autocomplete="organization">
+        </label>
+
+
+        <label>
+          Membership Level
+          <select name="membership" required title="Choose a membership level">
+            <option value="">Select a level…</option>
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+
+        <label>
+          Organization Description
+          <textarea name="description" title="Describe your organization"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Submit Application" class="submit-btn">
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <div class="card" data-modal="npModal">
+        <h3>NP Membership</h3>
+        <p>For non‑profit organizations — free level.</p>
+        <button class="info-btn">More Info</button>
+      </div>
+
+      <div class="card" data-modal="bronzeModal">
+        <h3>Bronze Membership</h3>
+        <p>Affordable membership for small businesses.</p>
+        <button class="info-btn">More Info</button>
+      </div>
+
+      <div class="card" data-modal="silverModal">
+        <h3>Silver Membership</h3>
+        <p>Extra benefits and promotion.</p>
+        <button class="info-btn">More Info</button>
+      </div>
+
+      <div class="card" data-modal="goldModal">
+        <h3>Gold Membership</h3>
+        <p>Maximum exposure, VIP access, and special events.</p>
+        <button class="info-btn">More Info</button>
+      </div>
+    </section>
+
+    <dialog id="npModal" class="modal">
+      <h3>NP Membership Benefits</h3>
+      <p>• Free membership<br>• Community events<br>• Non‑profit networking</p>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronzeModal" class="modal">
+      <h3>Bronze Membership Benefits</h3>
+      <p>• Event discounts<br>• Business listing<br>• Newsletter promotion</p>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silverModal" class="modal">
+      <h3>Silver Membership Benefits</h3>
+      <p>• Spotlight advertising<br>• Training sessions<br>• Priority event seating</p>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="goldModal" class="modal">
+      <h3>Gold Membership Benefits</h3>
+      <p>• Maximum promotion<br>• VIP events<br>• Premium placement on homepage</p>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Chamber of Commerce</p>
+  </footer>
+</body>
+</html>
