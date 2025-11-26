@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #0d1b2a;
+  --background-color: #f5f7fa;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto", Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  font-family: "Roboto Slab", serif;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.wireframe img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.scenario-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.2s ease;
+}
+.scenario-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  section {
+    padding: 15px;
+  }
+}
