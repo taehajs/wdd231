@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = `
-      <h3>${ev.name}</h3>
+      <img src="${ev.img}" alt="${ev.title}" loading="lazy">
+      <h3>${ev.title}</h3>
       <p>${ev.date}</p>
-      <p>${ev.location}</p>
+      <p>${ev.desc}</p>
     `;
     container.appendChild(div);
   });
