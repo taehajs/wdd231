@@ -1,17 +1,5 @@
 [
-  { "title": "Dribble Skills", "img": "images/training-dribble.jpg", "desc": "Enhance your control and agility on the field." },
-  { "title": "Shooting Practice", "img": "images/training-shooting.jpg", "desc": "Improve accuracy and power in every shot." },
-  { "title": "Drills & Exercises", "img": "images/cones-drill.jpg", "desc": "Fun drills to sharpen your overall skills." },
-  { "title": "Speed & Fitness", "img": "images/training-dribble.jpg", "desc": "Boost your speed and stamina." },
-  { "title": "Goalkeeper Training", "img": "images/training-shooting.jpg", "desc": "Essential drills for goalkeepers." },
-  { "title": "Passing Mastery", "img": "images/cones-drill.jpg", "desc": "Precision and timing in every pass." },
-  { "title": "Tactical Awareness", "img": "images/training-dribble.jpg", "desc": "Read the game and make smart moves." },
-  { "title": "Ball Control", "img": "images/training-shooting.jpg", "desc": "Keep the ball close under pressure." },
-  { "title": "Shooting on the Run", "img": "images/cones-drill.jpg", "desc": "Powerful shots in motion." },
-  { "title": "Small-Sided Games", "img": "images/training-dribble.jpg", "desc": "Practice in realistic scenarios." },
-  { "title": "1v1 Drills", "img": "images/training-shooting.jpg", "desc": "Beat your opponent with confidence." },
-  { "title": "Set Pieces", "img": "images/cones-drill.jpg", "desc": "Master corners, free kicks, and penalties." },
-  { "title": "Conditioning Drills", "img": "images/training-dribble.jpg", "desc": "Endurance and strength exercises." },
-  { "title": "Agility Ladder", "img": "images/training-shooting.jpg", "desc": "Improve quick feet and reflexes." },
-  { "title": "Coordination Exercises", "img": "images/cones-drill.jpg", "desc": "Develop balance and control." }
+  { "title": "Dribble Skills", "desc": "Enhance your control and agility on the field.", "img": "images/training-dribble.jpg" },
+  { "title": "Shooting Practice", "desc": "Improve accuracy and power in every shot.", "img": "images/training-shooting.jpg" },
+  { "title": "Drills & Exercises", "desc": "Fun drills to sharpen your overall skills.", "img": "images/cones-drill.jpg" }
 ]
