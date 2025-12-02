@@ -1,18 +1,10 @@
-export function select(selector) {
-  return document.querySelector(selector);
-}
-
-export function selectAll(selector) {
-  return document.querySelectorAll(selector);
-}
-
 export async function fetchJSON(path) {
   try {
     const res = await fetch(path);
-    if (!res.ok) throw new Error("JSON failed");
+    if (!res.ok) throw new Error("Failed to fetch JSON");
     return await res.json();
   } catch (err) {
-    console.error("JSON error: ", err);
+    console.error(err);
     return null;
   }
 }

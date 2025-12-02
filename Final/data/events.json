@@ -1,5 +1,7 @@
 [
   { "name": "Sunday Pickup Match", "date": "2025-03-12", "location": "City Park" },
   { "name": "Beginner Friendly Game", "date": "2025-03-15", "location": "North Field" },
-  { "name": "Local Tournament", "date": "2025-04-01", "location": "Sports Complex" }
+  { "name": "Local Tournament", "date": "2025-04-01", "location": "Sports Complex" },
+  { "name": "Friday Night Futsal", "date": "2025-04-05", "location": "Community Center" },
+  { "name": "Youth League Final", "date": "2025-04-12", "location": "Stadium A" }
 ]

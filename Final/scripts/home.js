@@ -1,21 +1,22 @@
-import { loadData } from './utils.js';
+import { fetchJSON } from './utils.js';
 
-const container = document.querySelector('#featured-events');
+document.addEventListener("DOMContentLoaded", async () => {
+  const container = document.getElementById("featured-events");
+  const data = await fetchJSON("./data/events.json");
 
-async function loadEvents() {
-  try {
-    const data = await loadData('data/events.json'); 
-    container.innerHTML = data.map(ev => `
-      <div class="card">
-        <h3>${ev.name}</h3>
-        <p>${ev.date}</p>
-        <p>${ev.location}</p>
-      </div>
-    `).join('');
-  } catch (err) {
-    console.error('Error loading events:', err);
-    container.innerHTML = "<p class='error'>Unable to load events.</p>";
+  if (!data) {
+    container.innerHTML = "<p>Failed to load events.</p>";
+    return;
   }
-}
 
-loadEvents();
+  data.forEach(ev => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = `
+      <h3>${ev.name}</h3>
+      <p>${ev.date}</p>
+      <p>${ev.location}</p>
+    `;
+    container.appendChild(div);
+  });
+});

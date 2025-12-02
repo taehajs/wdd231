@@ -1,0 +1,11 @@
+#featured-events .card {
+  text-align: center;
+}
+
+#training-tips .training-card h3 {
+  margin-top: 0.5rem;
+}
+
+#gallery img {
+  border-radius: 8px;
+}

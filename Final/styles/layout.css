@@ -1,14 +1,30 @@
 header {
   background: #222;
   color: white;
-  padding: 1.5rem;
-  text-align: center;
+  padding: 1rem;
 }
 
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1.5rem;
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 footer {
@@ -17,4 +33,74 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.hero p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.card, .training-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav ul {
+  display: none; 
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav ul.show {
+  display: flex; 
+}
+
+@media(min-width: 768px) {
+  #menu-btn {
+    display: none;
+  }
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }

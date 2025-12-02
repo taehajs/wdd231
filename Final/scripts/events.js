@@ -1,8 +1,7 @@
-import { fetchJSON } from "./utils.js";
+import { fetchJSON } from './utils.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const container = document.querySelector("#event-list");
-
+  const container = document.getElementById("event-list");
   const data = await fetchJSON("./data/events.json");
 
   if (!data) {
@@ -10,13 +9,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  data.events.forEach(ev => {
+  data.forEach(ev => {
     const div = document.createElement("div");
-    div.classList.add("card");
+    div.className = "card";
     div.innerHTML = `
-      <h3>${ev.title}</h3>
+      <h3>${ev.name}</h3>
       <p>${ev.date}</p>
-      <p>${ev.description}</p>
+      <p>${ev.location}</p>
     `;
     container.appendChild(div);
   });
