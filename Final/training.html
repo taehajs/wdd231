@@ -9,7 +9,6 @@
   <link rel="icon" href="images/favicon.png" />
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/layout.css" />
-  <link rel="stylesheet" href="styles/training.css" />
   <script type="module" src="scripts/training.js" defer></script>
 </head>
 <body>
@@ -27,18 +26,16 @@
   <main>
     <h1>Training Guide</h1>
     <section id="drills" class="grid"></section>
-  </main>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="modal-close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <img id="modal-img" src="" alt="">
-      <p id="modal-description"></p>
-      <p id="modal-level"></p>
-      <button id="favorite-btn">★ Add to Favorites</button>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <img id="modal-img" src="" alt="" />
+      </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 Soccer Community Hub</p>
