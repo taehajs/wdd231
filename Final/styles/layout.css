@@ -1,0 +1,20 @@
+header {
+  background: #222;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
