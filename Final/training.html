@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training Tips – Soccer Hub</title>
-  <meta name="description" content="Learn soccer skills: dribbling, passing, shooting, and more." />
-  <meta name="author" content="Jiseung" />
-  <link rel="icon" href="images/favicon.png" />
-  <link rel="stylesheet" href="styles/layout.css" />
+  <meta name="description" content="Learn soccer skills: dribbling, passing, shooting, and more.">
+  <meta name="author" content="Jiseung Kim">
+  <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/training.css">
+
+  <script type="module" src="scripts/nav.js" defer></script>
   <script type="module" src="scripts/training.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <button id="menu-btn">☰</button>
+      <button id="menu-btn" aria-label="Open Menu">☰</button>
       <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="training.html" class="active">Training</a></li>
@@ -24,12 +29,29 @@
 
   <main>
     <h1>Training Guide</h1>
-    <section id="drills" class="grid"></section> 
+    <section id="drills" class="grid">
+      <div class="training-card">
+        <img src="images/training-dribble.jpg" alt="Dribble training" loading="lazy">
+        <h3>Dribble Skills</h3>
+        <p>Enhance your control and agility on the field.</p>
+      </div>
+      <div class="training-card">
+        <img src="images/training-shooting.jpg" alt="Shooting training" loading="lazy">
+        <h3>Shooting Practice</h3>
+        <p>Improve accuracy and power in every shot.</p>
+      </div>
+      <div class="training-card">
+        <img src="images/cones-drill.jpg" alt="Cone drills" loading="lazy">
+        <h3>Drills & Exercises</h3>
+        <p>Fun drills to sharpen your overall skills.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Soccer Community Hub</p>
     <a href="attributions.html">Attributions</a>
+    <p><a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank">Project Demo Video</a></p>
   </footer>
 </body>
 </html>
