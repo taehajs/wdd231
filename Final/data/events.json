@@ -2,6 +2,16 @@
   { "name": "Sunday Pickup Match", "date": "2025-03-12", "location": "City Park" },
   { "name": "Beginner Friendly Game", "date": "2025-03-15", "location": "North Field" },
   { "name": "Local Tournament", "date": "2025-04-01", "location": "Sports Complex" },
-  { "name": "Friday Night Futsal", "date": "2025-04-05", "location": "Community Center" },
-  { "name": "Youth League Final", "date": "2025-04-12", "location": "Stadium A" }
+  { "name": "Weekend League", "date": "2025-04-08", "location": "South Stadium" },
+  { "name": "Youth Soccer League", "date": "2025-04-12", "location": "Community Field" },
+  { "name": "Futsal Cup", "date": "2025-04-18", "location": "Indoor Arena" },
+  { "name": "Friendly Match", "date": "2025-04-20", "location": "East Field" },
+  { "name": "Regional Championship", "date": "2025-05-01", "location": "Main Stadium" },
+  { "name": "Charity Game", "date": "2025-05-05", "location": "City Park" },
+  { "name": "Training Camp Match", "date": "2025-05-10", "location": "Sports Complex" },
+  { "name": "School League", "date": "2025-05-15", "location": "North Field" },
+  { "name": "Summer Tournament", "date": "2025-05-20", "location": "South Stadium" },
+  { "name": "Evening Futsal", "date": "2025-05-22", "location": "Indoor Arena" },
+  { "name": "Neighborhood Pickup", "date": "2025-05-25", "location": "Community Field" },
+  { "name": "Open Cup", "date": "2025-06-01", "location": "Main Stadium" }
 ]

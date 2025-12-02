@@ -1,6 +1,49 @@
-#drills .training-card {
-  text-align: center;
+.training-card {
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-#drills img {
-  border-radius: 8px;
+.training-card:hover {
+  transform: scale(1.05);
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+#modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#favorite-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }

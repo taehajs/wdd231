@@ -1,0 +1,17 @@
+[
+  { "title": "Dribbling Basics", "level": "Beginner", "duration": "5 min", "thumbnail": "images/training-dribble.jpg" },
+  { "title": "Shooting Techniques", "level": "Beginner", "duration": "6 min", "thumbnail": "images/training-shooting.jpg" },
+  { "title": "Passing Strategies", "level": "Beginner", "duration": "4 min", "thumbnail": "images/cones-drill.jpg" },
+  { "title": "Dribble + Ball Control", "level": "Intermediate", "duration": "7 min", "thumbnail": "images/training-dribble.jpg" },
+  { "title": "Goalkeeper Drills", "level": "Intermediate", "duration": "8 min", "thumbnail": "images/stadium-empty.jpg" },
+  { "title": "Speed & Conditioning", "level": "Advanced", "duration": "10 min", "thumbnail": "images/cones-drill.jpg" },
+  { "title": "Tactical Awareness", "level": "Intermediate", "duration": "6 min", "thumbnail": "images/soccer-ball-net.jpg" },
+  { "title": "Team Passing", "level": "Intermediate", "duration": "5 min", "thumbnail": "images/training-shooting.jpg" },
+  { "title": "Shooting on Goal", "level": "Beginner", "duration": "6 min", "thumbnail": "images/training-shooting.jpg" },
+  { "title": "1v1 Skills", "level": "Advanced", "duration": "7 min", "thumbnail": "images/training-dribble.jpg" },
+  { "title": "Corner Kicks", "level": "Beginner", "duration": "5 min", "thumbnail": "images/event-youth-league.jpg" },
+  { "title": "Free Kick Techniques", "level": "Advanced", "duration": "8 min", "thumbnail": "images/event-local-match.jpg" },
+  { "title": "Defensive Skills", "level": "Intermediate", "duration": "6 min", "thumbnail": "images/cones-drill.jpg" },
+  { "title": "Ball Control Drills", "level": "Beginner", "duration": "5 min", "thumbnail": "images/training-dribble.jpg" },
+  { "title": "Passing Under Pressure", "level": "Advanced", "duration": "7 min", "thumbnail": "images/soccer-ball-net.jpg" }
+]

@@ -1,0 +1,26 @@
+{
+  "drills": [
+    {
+      "id": 1,
+      "title": "Dribbling Drill",
+      "description": "Improve your ball control and agility with cones.",
+      "level": "Beginner",
+      "image": "images/training-dribble.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Shooting Drill",
+      "description": "Enhance accuracy and power with shooting exercises.",
+      "level": "Intermediate",
+      "image": "images/training-shooting.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Passing Drill",
+      "description": "Practice short and long passes with teammates.",
+      "level": "Beginner",
+      "image": "images/cones-drill.jpg"
+    }
+    
+  ]
+}
