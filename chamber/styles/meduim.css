@@ -1,0 +1,22 @@
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "cards sidebar"
+      "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
